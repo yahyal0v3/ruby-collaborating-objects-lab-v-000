@@ -24,8 +24,8 @@ class Artist
   end
 
   def self.find_by_name(name)
-    @@all.select do |artist| 
-      artist.name == name 
+    @@all.find do |artist|
+      artist.name == name
     end
   end
 
